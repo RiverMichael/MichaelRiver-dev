@@ -1,0 +1,187 @@
+:root {
+  --ff-heading: "Josefin Sans", sans-serif;
+  --ff-body: "Abril Fatface", cursive;
+
+  --clr-white: #cad8e9;
+  --clr-background: #0b0d0e;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html:focus-within {
+    scroll-behavior: smooth;
+  }
+
+body {
+    background: var(--clr-background);
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+    font-family: var(--ff-body);
+    color: var(--clr-white);
+  }
+
+img {
+    width: 100%;
+}
+
+header {
+  padding: 2em;
+  text-align: center;
+}
+
+header img {
+  max-width: 500px;
+}
+
+footer {
+  text-align: center;
+  padding: 1em;
+  font-size: 0.8rem;
+  margin-top: 2em;
+}
+
+a, a:visited {
+  color: var(--clr-white);
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.container {
+    width: min(100% - 2em, 75em);
+    margin-inline: auto;
+    padding: 2em;
+    margin-block: 4em;
+}
+
+.construction h1 {
+  max-width: 230px;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.split {
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+}
+
+.footer__wrapper {
+  gap: 1em;
+}
+
+.icon {
+  width: 36px;
+  outline: 4px solid transparent;
+  border-radius: 50%;
+  transition-property: outline-offset, outline-color;
+  transition-duration: 0.25s;
+}
+
+.icon:hover {
+  outline-offset: 4px;
+  animation: shake 0.25s;
+}
+
+.icon-instagram:hover {
+  outline-color: #a02d76;
+}
+
+.icon-linkedin:hover {
+  outline-color: #2d63bb;
+}
+
+.icon-github:hover {
+  outline-color: #5f6bba;
+}
+
+footer a {
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+@keyframes shake {
+  25%{transform: rotate(15deg);}
+  50%{transform: rotate(-15deg);}
+  75%{transform: rotate(15deg);}
+  100%{transform: rotate(-15deg);}
+}
+
+.loader {
+  transform: rotateZ(45deg);
+  perspective: 1000px;
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  color: var(--clr-white);
+}
+
+.loader:before,
+.loader:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: inherit;
+  height: inherit;
+  border-radius: 50%;
+  transform: rotateX(70deg);
+  animation: 1s spin linear infinite;
+}
+
+.loader:after {
+  color: #81ade1;
+  transform: rotateY(70deg);
+  animation-delay: .4s;
+}
+
+@keyframes spin {
+  0%,
+  100% {
+    box-shadow: .2em 0px 0 0px currentcolor;
+  }
+  12% {
+    box-shadow: .2em .2em 0 0 currentcolor;
+  }
+  25% {
+    box-shadow: 0 .2em 0 0px currentcolor;
+  }
+  37% {
+    box-shadow: -.2em .2em 0 0 currentcolor;
+  }
+  50% {
+    box-shadow: -.2em 0 0 0 currentcolor;
+  }
+  62% {
+    box-shadow: -.2em -.2em 0 0 currentcolor;
+  }
+  75% {
+    box-shadow: 0px -.2em 0 0 currentcolor;
+  }
+  87% {
+    box-shadow: .2em -.2em 0 0 currentcolor;
+  }
+}
+
+
+@media (min-width: 600px) {
+  .construction h1 {
+    max-width: 430px;
+  }
+}
