@@ -1,0 +1,16 @@
+:root {
+    --ff-heading: "Oswald", sans-serif;
+    --ff-body: "Merriweather Sans", sans-serif;
+
+    --fw-light: 300;
+    --fw-regular: 400;
+    --fw-bold: 700;
+
+    --clr-backgr-dark: #1b212c;
+    --clr-backgr-light: #3c4657;
+    --clr-text: #ffffff;
+    --clr-action: #ed674b;
+    --clr-grey: #919191;
+    --clr-light: #202020;
+    --clr-dark: #1d1d1d;
+}

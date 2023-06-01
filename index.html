@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="" />
+
+    <title>Michael River Nilsson - a Frontend Development Student</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300;400;700&family=Oswald:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/media.css" />
+
+    <script src="https://code.iconify.design/iconify-icon/1.0.1/iconify-icon.min.js"></script>
+
+    <script src="js/navigation.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <a href="#">
+          <img src="" alt="michael river nilsson" />
+        </a>
+      </div>
+
+      <iconify-icon id="hamburger-icon" icon="pajamas:hamburger"></iconify-icon>
+
+      <nav>
+        <iconify-icon id="close-menu__icon" icon="ph:x-bold"></iconify-icon>
+        <ul class="split">
+          <li><a href="#">home</a></li>
+          <li><a href="#about">about me</a></li>
+          <li><a href="#skills">skills</a></li>
+          <li><a href="#portfolio">portfolio</a></li>
+          <li><a href="#contact">contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="intro flex" id="intro">
+        <div class="intro-wrapper flex container">
+          <div class="intro-heading flex">
+            <h1>hello<span>.</span></h1>
+          </div>
+
+          <div class="intro-content flex">
+            <p><span>- </span>I'm Michael River Nilsson</p>
+            <p>a frontend development student</p>
+          </div>
+
+          <div class="intro-action">
+            <a href="#contact" class="cta">contact me</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="about flex" id="about">
+        <div class="about-wrapper flex container">
+          <section class="heading flex">
+            <div>About me</div>
+            <h2>About me</h2>
+          </section>
+
+          <div class="about-content__wrapper split">
+            <section class="about-image">
+              <img src="" alt="" class="about__image" />
+              <div class="about-image__box"></div>
+            </section>
+
+            <section class="about-content flex">
+              <p>
+                I'm originally from Sweden, but I've lived in Norway since 2007.
+                At the moment I'm studying frontend development at Noroff, and
+                following my dream to work with coding and design.
+              </p>
+              <div class="about-content__details flex">
+                <div class="about-content__item flex">
+                  <h3>Name</h3>
+                  <p>Michael River Nilsson</p>
+                </div>
+                <div class="about-content__item flex">
+                  <h3>Location</h3>
+                  <p>Oslo, Norway</p>
+                </div>
+                <div class="about-content__item flex">
+                  <h3>Email</h3>
+                  <a href="mailto:mrn@michaelriver.dev">mrn@michaelriver.dev</a>
+                </div>
+                <div class="about-content__item education flex">
+                  <h3>Education</h3>
+                  <p>
+                    Currently studying Frontend Development @
+                    <a href="https://www.noroff.no"
+                      >Noroff - School of technology and digital design</a
+                    >, graduating in June 2024
+                  </p>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </section>
+
+      <section class="skills flex" id="skills">
+        <div class="skills-wrapper container">
+          <section class="heading flex">
+            <div>Skills</div>
+            <h2>Skills</h2>
+          </section>
+        </div>
+      </section>
+
+      <section class="portfolio flex" id="portfolio">
+        <div class="portfolio-wrapper flex container">
+          <section class="heading flex">
+            <div>Portfolio</div>
+            <h2>Portfolio</h2>
+          </section>
+          <section class="project"></section>
+          <section class="project"></section>
+          <section class="project"></section>
+        </div>
+      </section>
+
+      <section class="contact flex" id="contact">
+        <div class="contact-wrapper container">
+          <section class="heading flex">
+            <div>Contact me</div>
+            <h2>Contact me</h2>
+          </section>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p class="copy">
+        Copyright &copy; 2023 |
+        <a href="mailto:mrn@michaelriver.dev">Michael River Nilsson</a>
+      </p>
+    </footer>
+  </body>
+</html>
