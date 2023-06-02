@@ -34,11 +34,11 @@
       <nav>
         <iconify-icon id="close-menu__icon" icon="ph:x-bold"></iconify-icon>
         <ul class="split">
-          <li><a href="#">home</a></li>
-          <li><a href="#about">about me</a></li>
-          <li><a href="#skills">skills</a></li>
-          <li><a href="#portfolio">portfolio</a></li>
-          <li><a href="#contact">contact</a></li>
+          <li><a href="#" id="link-home" class="active">home</a></li>
+          <li><a href="#about" id="link-about">about me</a></li>
+          <li><a href="#skills" id="link-skills">skills</a></li>
+          <li><a href="#portfolio" id="link-portfolio">portfolio</a></li>
+          <li><a href="#contact" id="link-contact">contact</a></li>
         </ul>
       </nav>
     </header>
@@ -61,7 +61,7 @@
         </div>
       </section>
 
-      <section class="about flex" id="about">
+      <article class="about flex" id="about">
         <div class="about-wrapper flex container">
           <section class="heading flex">
             <div>About me</div>
@@ -106,13 +106,45 @@
             </section>
           </div>
         </div>
-      </section>
+      </article>
 
       <section class="skills flex" id="skills">
-        <div class="skills-wrapper container">
+        <div class="skills-wrapper flex container">
           <section class="heading flex">
             <div>Skills</div>
             <h2>Skills</h2>
+          </section>
+
+          <section class="skills-content flex">
+            <img
+              src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/FrontendDevelopment/html.svg"
+              alt="html"
+              class="skills-icon"
+            /><img
+              src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/FrontendDevelopment/css.svg"
+              alt="css"
+              class="skills-icon"
+            /><img
+              src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/ProgrammingLanguages/javascript.svg"
+              alt="javascript"
+              class="skills-icon"
+            /><img
+              src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Software/figma.svg"
+              alt="figma"
+              class="skills-icon"
+            /><img
+              src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/wordpress.svg"
+              alt="wordpress"
+              class="skills-icon"
+            /><img
+              src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Other/git.svg"
+              alt="git"
+              class="skills-icon"
+            /><img
+              src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/github.svg"
+              alt="github"
+              class="skills-icon"
+            />
           </section>
         </div>
       </section>
@@ -123,9 +155,106 @@
             <div>Portfolio</div>
             <h2>Portfolio</h2>
           </section>
-          <section class="project"></section>
-          <section class="project"></section>
-          <section class="project"></section>
+
+          <div class="project-wrapper flex">
+            <section class="project split" id="rainydays">
+              <div class="project-content flex">
+                <h3>RainyDays</h3>
+                <div class="project-details flex">
+                  <h4>Description</h4>
+                  <p>bla bla bla</p>
+                </div>
+                <div class="project-details flex">
+                  <h4>Type of project</h4>
+                  <p>bla bla bla</p>
+                </div>
+                <div class="project-details flex">
+                  <h4>Languages</h4>
+                  <p>bla bla bla</p>
+                </div>
+                <div class="project-links flex">
+                  <div class="project-details flex">
+                    <h4>Link to live project</h4>
+                    <a href="https://rainydays.michaelriver.dev" target="_blank"
+                      >https://rainydays.michaelriver.dev</a
+                    >
+                  </div>
+                  <div class="project-details flex">
+                    <h4>Link to GitHub repo</h4>
+                    <a href="" target="_blank"></a>
+                  </div>
+                </div>
+              </div>
+
+              <img src="" alt="screenshot of rainydays" />
+            </section>
+
+            <section class="project split" id="flavor-files">
+              <div class="project-content flex">
+                <h3>The Flavor Files</h3>
+                <div class="project-details flex">
+                  <h4>Description</h4>
+                  <p>bla bla bla</p>
+                </div>
+                <div class="project-details flex">
+                  <h4>Type of project</h4>
+                  <p>bla bla bla</p>
+                </div>
+                <div class="project-details flex">
+                  <h4>Languages</h4>
+                  <p>bla bla bla</p>
+                </div>
+                <div class="project-links flex">
+                  <div class="project-details flex">
+                    <h4>Link to live project</h4>
+                    <a
+                      href="https://theflavorfiles.michaelriver.dev"
+                      target="_blank"
+                      >https://theflavorfiles.michaelriver.dev</a
+                    >
+                  </div>
+                  <div class="project-details flex">
+                    <h4>Link to GitHub repo</h4>
+                    <a href="" target="_blank"></a>
+                  </div>
+                </div>
+              </div>
+
+              <img src="" alt="screenshot of the flavor files" />
+            </section>
+
+            <section class="project split" id="csm">
+              <div class="project-content flex">
+                <h3>Community Science Museum</h3>
+                <div class="project-details flex">
+                  <h4>Description</h4>
+                  <p>bla bla bla</p>
+                </div>
+                <div class="project-details flex">
+                  <h4>Type of project</h4>
+                  <p>bla bla bla</p>
+                </div>
+                <div class="project-details flex">
+                  <h4>Languages</h4>
+                  <p>bla bla bla</p>
+                </div>
+                <div class="project-links flex">
+                  <div class="project-details flex">
+                    <h4>Link to live project</h4>
+                    <a href="https://csm.michaelriver.dev" target="_blank"
+                      >https://csm.michaelriver.dev</a
+                    >
+                  </div>
+                  <div class="project-details flex">
+                    <h4>Link to GitHub repo</h4>
+                    <a href="" target="_blank"></a>
+                  </div>
+                </div>
+              </div>
+
+              <img src="" alt="screenshot of community science museum" />
+            </section>
+          </div>
         </div>
       </section>
 
