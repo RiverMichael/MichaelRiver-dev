@@ -8,7 +8,11 @@ a {
     color: var(--clr-action);
 }
 
-a:active {
+.project a:hover {
+    color: var(--clr-action);
+}
+
+a:active, .about a:active, .project a:active, footer a:active {
     color: var(--clr-darkgrey);
 }
 
@@ -53,10 +57,3 @@ nav ul a:hover {
     color: var(--clr-dark);
 }
 
-/* .education a {
-    color: var(--clr-lightgrey);
-} */
-
-/* .education a:hover {
-    color: var(--clr-action);
-  } */
