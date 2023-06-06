@@ -5,15 +5,11 @@ a {
     width: fit-content;
 }
 
-.about a:hover, footer a:hover {
+.about a:hover, .project a:hover, .contact a:hover, footer a:hover {
     color: var(--clr-action);
 }
 
-.project a:hover {
-    color: var(--clr-action);
-}
-
-a:active, .about a:active, .project a:active, footer a:active {
+a:active, .about a:active, .project a:active, .contact a:active, footer a:active {
     color: var(--clr-darkgrey);
 }
 
@@ -35,7 +31,7 @@ nav ul a:hover {
 
 .cta {
     background: var(--clr-action);
-    color: var(--clr-text);
+    color: var(--clr-dark);
     font-family: var(--ff-body);
     font-weight: var(--fw-bold);
     font-size: 1.25rem;
@@ -57,4 +53,3 @@ nav ul a:hover {
 .cta:active {
     color: var(--clr-dark);
 }
-
