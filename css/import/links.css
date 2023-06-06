@@ -2,6 +2,7 @@ a {
     text-decoration: none;
     color: var(--clr-link);
     transition: color 0.25s ease-in;
+    width: fit-content;
 }
 
 .about a:hover, footer a:hover {

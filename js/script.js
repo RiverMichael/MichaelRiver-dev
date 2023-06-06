@@ -1,15 +1,16 @@
 const hamburgerMenuButton = document.querySelector("#hamburger-icon");
 const closeMenuButton = document.querySelector("#close-menu__icon");
-const nav = document.querySelector("nav");
-const header = document.querySelector("header");
 
+const nav = document.querySelector("nav");
+const navMenuItems = document.querySelectorAll("nav ul li");
 const navHome = document.querySelector("#link-home");
 const navAbout = document.querySelector("#link-about");
 const navSkills = document.querySelector("#link-skills");
 const navPortfolio = document.querySelector("#link-portfolio");
 const navContact = document.querySelector("#link-contact");
 
-const introSection = document.querySelector("#intro");
+const header = document.querySelector("header");
+const footer = document.querySelector("footer");
 const aboutSection = document.querySelector("#about");
 const skillsSection = document.querySelector("#skills");
 const portfolioSection = document.querySelector("#portfolio");
@@ -20,6 +21,10 @@ const headerHeight = header.offsetHeight;
 hamburgerMenuButton.addEventListener("click", openMenu);
 closeMenuButton.addEventListener("click", closeMenu)
 window.addEventListener("scroll", handleNavOnScroll);
+
+navMenuItems.forEach(menuItem => {
+    menuItem.addEventListener("click", closeMenu);
+});
 
 
 // Toggle Navigation
@@ -36,6 +41,8 @@ function closeMenu() {
 
 // Nav on Scroll
 function handleNavOnScroll() {
+    const maxScroll = document.documentElement.scrollHeight - window.innerHeight;
+
     if (scrollY <= aboutSection.offsetTop - headerHeight) {
         navHome.classList.add("active");
     } else {
@@ -53,16 +60,16 @@ function handleNavOnScroll() {
     } else if ( scrollY >= skillsSection.offsetTop - headerHeight) {
         navSkills.classList.add("active");
     };
-
-    if (scrollY < portfolioSection.offsetTop - headerHeight || scrollY > portfolioSection.offsetTop + portfolioSection.offsetHeight - headerHeight) {
+    
+    if (scrollY < portfolioSection.offsetTop - headerHeight || scrollY > maxScroll - footer.offsetHeight) {
         navPortfolio.classList.remove("active");
     } else if ( scrollY >= portfolioSection.offsetTop - headerHeight) {
         navPortfolio.classList.add("active");
     };
 
-    if (scrollY < contactSection.offsetTop - headerHeight || scrollY > contactSection.offsetTop + contactSection.offsetHeight - headerHeight) {
-        navContact.classList.remove("active");
-    } else if ( scrollY >= contactSection.offsetTop - headerHeight) {
+    if (scrollY >= maxScroll - footer.offsetHeight) {
         navContact.classList.add("active");
+    } else {
+        navContact.classList.remove("active");
     };
 };

@@ -1,9 +1,4 @@
 @media (min-width: 600px) {
-    .container {
-        width: min(100% - 200px, 1200px);
-        margin-inline: auto;
-    }
-
     .copy {
         font-size: 1rem;
     }

@@ -21,7 +21,6 @@ body {
 }
 
 h1, h2, h3 {
-  font-family: var(--ff-heading);
   font-weight: var(--fw-bold);
 }
 
@@ -51,7 +50,7 @@ img {
 }
 
 .container {
-  width: min(100% - 50px, 1200px);
+  width: min(100% - 100px, 1200px);
   margin-inline: auto;
 }
 
@@ -71,6 +70,11 @@ header {
   top: 0;
   z-index: 999;
   opacity: 0.9;
+  align-items: center;
+}
+
+.logo span {
+  color: var(--clr-action);
 }
 
 iconify-icon {
@@ -80,6 +84,10 @@ iconify-icon {
 
 #hamburger-icon {
   margin-left: auto;
+}
+
+#hamburger-icon:hover {
+  cursor: pointer;
 }
 
 nav {
@@ -136,7 +144,7 @@ nav li {
 
 /* ICONS */
 .icon {
-  width: 36px;
+  width: 40px;
   outline: 4px solid transparent;
   border-radius: 50%;
   transition-property: outline-offset, outline-color;
@@ -148,16 +156,16 @@ nav li {
   animation: shake 0.25s;
 }
 
-.icon-instagram:hover {
-  outline-color: #a02d76;
-}
-
 .icon-linkedin:hover {
   outline-color: #2d63bb;
 }
 
 .icon-github:hover {
   outline-color: #5f6bba;
+}
+
+.icon-instagram:hover {
+  outline-color: #a02d76;
 }
 
 @keyframes shake {
@@ -185,7 +193,6 @@ nav li {
   align-items: baseline;
   text-transform: capitalize;
   font-size: 4rem;
-  font-family: var(--ff-heading);
 }
 
 .intro span {
@@ -206,6 +213,7 @@ nav li {
   align-items: center;
   justify-content: center;
   text-transform: capitalize;
+  text-align: center;
 }
 
 .heading div {
@@ -344,4 +352,27 @@ nav li {
 .project-image img {
   border-radius: 5px;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  object-fit: cover;
+}
+
+/* CONTACT */
+.contact-wrapper {
+  gap: 50px;
+  width: min(100% - 100px, 800px);
+}
+
+.bold {
+  font-size: 1.5rem;
+}
+
+.contact-content {
+  gap: 30px;
+  align-items: center;
+  text-align: center;
+}
+
+.contact-icons {
+  flex-direction: row;
+  gap: 20px;
+  justify-content: center;
 }
