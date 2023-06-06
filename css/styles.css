@@ -1,3 +1,152 @@
+<<<<<<< HEAD
+@import  "../css/import/variables.css";
+@import  "../css/import/links.css";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+  font-family: var(--ff-body);
+  background: var(--clr-light);
+  color: var(--clr-text);
+}
+
+h1, h2, h3 {
+  font-weight: var(--fw-bold);
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 1.95rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+p {
+  font-size: 1rem;
+}
+
+h2, h3, h4 {
+  color: var(--clr-action);
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+.container {
+  width: min(100% - 100px, 1200px);
+  margin-inline: auto;
+}
+
+.flex, .split {
+  display: flex;
+  flex-direction: column;
+}
+
+/* HEADER */
+header {
+  background: var(--clr-light);
+  display: flex;
+  flex-direction: row;
+  padding: 20px;
+  position: sticky;
+  width: 100%;
+  top: 0;
+  z-index: 999;
+  opacity: 0.9;
+  align-items: center;
+}
+
+.logo img {
+  width: 50px;
+}
+
+iconify-icon {
+  font-size: 2.5rem;
+  color: var(--clr-action);
+}
+
+#hamburger-icon {
+  margin-left: auto;
+}
+
+#hamburger-icon:hover {
+  cursor: pointer;
+}
+
+nav {
+  display: none;
+  flex-direction: column;
+  background: var(--clr-light);
+  color: var(--clr-text);
+  opacity: 0.9; 
+  position: absolute;
+  z-index: 999;
+  right: 0;
+  top: 0px;
+  align-items: center;
+  animation: displaynav 0.3s ease-in-out;
+  transform-origin: right;
+  border-radius: 0px 0px 0px 20px;
+}
+
+#close-menu__icon {
+  align-self: flex-end;
+  padding: 20px 20px 0px;
+}
+
+.display-nav {
+  display: flex;
+}
+
+@keyframes displaynav {
+  0% {
+      transform: scaleX(0);
+  }
+  100% {
+      transform: scaleX(1);
+  }
+}
+
+nav ul {
+  gap: 50px;
+  padding: 50px;
+}
+
+nav li {
+  display: block;
+  text-transform: uppercase;
+}
+
+/* FOOTER */
+.copy {
+  background: var(--clr-dark);
+  text-align: center;
+  padding-block: 20px;
+  font-size: 0.8rem;
+}
+
+/* ICONS */
+.icon {
+  width: 40px;
+=======
 :root {
   --ff-heading: "Josefin Sans", sans-serif;
   --ff-body: "Abril Fatface", cursive;
@@ -84,6 +233,7 @@ h1 {
 
 .icon {
   width: 36px;
+>>>>>>> main
   outline: 4px solid transparent;
   border-radius: 50%;
   transition-property: outline-offset, outline-color;
@@ -95,10 +245,13 @@ h1 {
   animation: shake 0.25s;
 }
 
+<<<<<<< HEAD
+=======
 .icon-instagram:hover {
   outline-color: #a02d76;
 }
 
+>>>>>>> main
 .icon-linkedin:hover {
   outline-color: #2d63bb;
 }
@@ -107,12 +260,17 @@ h1 {
   outline-color: #5f6bba;
 }
 
+<<<<<<< HEAD
+.icon-instagram:hover {
+  outline-color: #a02d76;
+=======
 footer a {
   text-decoration: none;
 }
 
 footer a:hover {
   text-decoration: underline;
+>>>>>>> main
 }
 
 @keyframes shake {
@@ -122,6 +280,200 @@ footer a:hover {
   100%{transform: rotate(-15deg);}
 }
 
+<<<<<<< HEAD
+.intro, .about, .skills, .portfolio, .contact {
+  padding-block: 100px;
+}
+
+.about, .portfolio {
+  background: var(--clr-dark);
+}
+
+/* INTRO */
+.intro-wrapper {
+  gap: 20px;
+}
+
+.intro-heading {
+  flex-direction: row;
+  align-items: baseline;
+  text-transform: capitalize;
+  font-size: 4rem;
+}
+
+.intro span {
+  color: var(--clr-action);
+}
+
+.intro-content {
+  gap: 5px;
+}
+
+/* ABOUT ME */
+.about-wrapper, .skills-wrapper, .portfolio-wrapper, .contact-wrapper {
+  gap: 50px;
+}
+
+.about-wrapper, .heading, .about-content__wrapper, .skills-wrapper, .skills-item, .portfolio-wrapper {
+  align-items: center;
+}
+
+.heading {
+  justify-content: center;
+  text-transform: capitalize;
+  text-align: center;
+}
+
+.heading div {
+  position: relative;
+  font-size: 4rem;
+  font-weight: var(--fw-bold);
+  color: var(--clr-light);
+}
+
+.heading h2 {
+  position: absolute;
+}
+
+.about-content__wrapper {
+  gap: 100px;
+}
+
+.about-image {
+  position: relative;
+}
+
+.about__image {
+  object-fit: cover;
+  object-position: top;
+  position: relative;
+  background: var(--clr-light);
+  width: 250px;
+  height: 250px;
+  z-index: 900;filter: brightness(0.8);
+}
+
+.about-image__box {
+  border: 5px solid var(--clr-action);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 30px;
+  top: 30px;
+}
+
+.about-content {
+  max-width: 500px;
+}
+
+.about-content h3 {
+  font-size: 1.25rem;
+}
+
+.about-content, .about-content__details {
+  gap: 30px;  
+}
+
+.about-content__item {
+  gap: 5px;
+}
+
+.skills .heading div, .contact .heading div {
+  color: var(--clr-dark);
+}
+
+/* SKILLS */
+.skills-content {
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  max-width: 600px;
+}
+
+.skills-item {
+  box-shadow: 0px 0px 8px var(--clr-action);
+  padding: 20px;
+  gap: 20px;
+  width: 125px;
+  transition: all 0.25s ease-in-out;
+}
+
+.skills-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 0px 10px var(--clr-action);
+}
+
+.skills-item h3 {
+  font-size: 1.25rem;
+  color: var(--clr-link);
+}
+
+.skills-icon {
+  width: 40px;
+}
+
+/* PORTFOLIO */
+.project-wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 100px;
+}
+
+.project {
+  flex-direction: column-reverse;
+  gap: 30px;
+  box-shadow: 0px 0px 10px var(--clr-darkgrey);
+  border-radius: 20px;
+  padding: 20px;
+  justify-content: flex-end;
+}
+
+.project:hover {
+  box-shadow: 0px 0px 10px var(--clr-action);
+  transition: all 0.25s ease-in-out;
+}
+
+.project-content {
+  gap: 30px;
+}
+
+.project-details {
+  gap: 5px;
+}
+
+.project-languages {
+  flex-direction: row;
+  gap: 10px;
+}
+
+.project-image img {
+  border-radius: 5px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  object-fit: cover;
+}
+
+/* CONTACT */
+.contact-wrapper {
+  width: min(100% - 100px, 800px);
+}
+
+.bold {
+  font-size: 1.5rem;
+}
+
+.contact-content {
+  gap: 30px;
+  align-items: center;
+  text-align: center;
+}
+
+.contact-icons {
+  flex-direction: row;
+  gap: 20px;
+  justify-content: center;
+}
+=======
 .loader {
   transform: rotateZ(45deg);
   perspective: 1000px;
@@ -185,3 +537,4 @@ footer a:hover {
     max-width: 430px;
   }
 }
+>>>>>>> main

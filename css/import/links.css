@@ -1,0 +1,55 @@
+a {
+    text-decoration: none;
+    color: var(--clr-link);
+    transition: color 0.25s ease-in;
+    width: fit-content;
+}
+
+.about a:hover, .project a:hover, .contact a:hover, footer a:hover {
+    color: var(--clr-action);
+}
+
+a:active, .about a:active, .project a:active, .contact a:active, footer a:active {
+    color: var(--clr-darkgrey);
+}
+
+nav a {
+    color: var(--clr-text);
+}
+
+nav ul:hover a {
+    opacity: 0.4;
+}
+
+nav ul a:hover {
+    opacity: 1;
+}
+
+.active {
+    color: var(--clr-action);
+}
+
+.cta {
+    background: var(--clr-action);
+    color: var(--clr-dark);
+    font-family: var(--ff-body);
+    font-weight: var(--fw-bold);
+    font-size: 1.25rem;
+    text-align: center;
+    text-transform: uppercase;
+    border-radius: 5px;
+    border: none;
+    padding: 5px 15px;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+    transition: all 0.25s ease-in-out;
+}
+
+.cta:hover {
+    background: var(--clr-darkgrey);
+    color: var(--clr-action);
+}
+
+.cta:active {
+    color: var(--clr-dark);
+}
