@@ -19,57 +19,55 @@ const contactSection = document.querySelector("#contact");
 const headerHeight = header.offsetHeight;
 
 hamburgerMenuButton.addEventListener("click", openMenu);
-closeMenuButton.addEventListener("click", closeMenu)
+closeMenuButton.addEventListener("click", closeMenu);
 window.addEventListener("scroll", handleNavOnScroll);
 
-navMenuItems.forEach(menuItem => {
-    menuItem.addEventListener("click", closeMenu);
+navMenuItems.forEach((menuItem) => {
+  menuItem.addEventListener("click", closeMenu);
 });
-
 
 // Toggle Navigation
 function openMenu() {
-    nav.classList.add("display-nav");
-    hamburgerMenuButton.style.opacity = 0;
-};
+  nav.classList.add("display-nav");
+  hamburgerMenuButton.style.opacity = 0;
+}
 
 function closeMenu() {
-    nav.classList.remove("display-nav");
-    hamburgerMenuButton.style.opacity = 1;
-};
-
+  nav.classList.remove("display-nav");
+  hamburgerMenuButton.style.opacity = 1;
+}
 
 // Nav on Scroll
 function handleNavOnScroll() {
-    const maxScroll = document.documentElement.scrollHeight - window.innerHeight;
+  const maxScroll = document.documentElement.scrollHeight - window.innerHeight;
 
-    if (scrollY <= aboutSection.offsetTop - headerHeight) {
-        navHome.classList.add("active");
-    } else {
-        navHome.classList.remove("active");
-    };
+  if (scrollY <= aboutSection.offsetTop - headerHeight) {
+    navHome.classList.add("active");
+  } else {
+    navHome.classList.remove("active");
+  }
 
-    if (scrollY < aboutSection.offsetTop - headerHeight || scrollY > aboutSection.offsetTop + aboutSection.offsetHeight - headerHeight) {
-        navAbout.classList.remove("active");
-    } else if (scrollY >= aboutSection.offsetTop - headerHeight)  {
-        navAbout.classList.add("active");
-    };
+  if (scrollY < aboutSection.offsetTop - headerHeight || scrollY > aboutSection.offsetTop + aboutSection.offsetHeight - headerHeight) {
+    navAbout.classList.remove("active");
+  } else if (scrollY >= aboutSection.offsetTop - headerHeight) {
+    navAbout.classList.add("active");
+  }
 
-    if (scrollY < skillsSection.offsetTop - headerHeight || scrollY > skillsSection.offsetTop + skillsSection.offsetHeight - headerHeight) {
-        navSkills.classList.remove("active");
-    } else if ( scrollY >= skillsSection.offsetTop - headerHeight) {
-        navSkills.classList.add("active");
-    };
-    
-    if (scrollY < portfolioSection.offsetTop - headerHeight || scrollY > maxScroll - footer.offsetHeight) {
-        navPortfolio.classList.remove("active");
-    } else if ( scrollY >= portfolioSection.offsetTop - headerHeight) {
-        navPortfolio.classList.add("active");
-    };
+  if (scrollY < skillsSection.offsetTop - headerHeight || scrollY > skillsSection.offsetTop + skillsSection.offsetHeight - headerHeight) {
+    navSkills.classList.remove("active");
+  } else if (scrollY >= skillsSection.offsetTop - headerHeight) {
+    navSkills.classList.add("active");
+  }
 
-    if (scrollY >= maxScroll - footer.offsetHeight) {
-        navContact.classList.add("active");
-    } else {
-        navContact.classList.remove("active");
-    };
-};
+  if (scrollY < portfolioSection.offsetTop - headerHeight || scrollY > maxScroll - footer.offsetHeight) {
+    navPortfolio.classList.remove("active");
+  } else if (scrollY >= portfolioSection.offsetTop - headerHeight) {
+    navPortfolio.classList.add("active");
+  }
+
+  if (scrollY >= maxScroll - footer.offsetHeight) {
+    navContact.classList.add("active");
+  } else {
+    navContact.classList.remove("active");
+  }
+}

@@ -1,5 +1,5 @@
-@import  "../css/import/variables.css";
-@import  "../css/import/links.css";
+@import "../css/import/variables.css";
+@import "../css/import/links.css";
 
 * {
   margin: 0;
@@ -20,7 +20,9 @@ body {
   color: var(--clr-text);
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   font-weight: var(--fw-bold);
 }
 
@@ -40,7 +42,9 @@ p {
   font-size: 1rem;
 }
 
-h2, h3, h4 {
+h2,
+h3,
+h4 {
   color: var(--clr-action);
 }
 
@@ -54,7 +58,8 @@ img {
   margin-inline: auto;
 }
 
-.flex, .split {
+.flex,
+.split {
   display: flex;
   flex-direction: column;
 }
@@ -95,7 +100,7 @@ nav {
   flex-direction: column;
   background: var(--clr-light);
   color: var(--clr-text);
-  opacity: 0.9; 
+  opacity: 0.9;
   position: absolute;
   z-index: 999;
   right: 0;
@@ -117,10 +122,10 @@ nav {
 
 @keyframes displaynav {
   0% {
-      transform: scaleX(0);
+    transform: scaleX(0);
   }
   100% {
-      transform: scaleX(1);
+    transform: scaleX(1);
   }
 }
 
@@ -170,17 +175,30 @@ nav li {
 }
 
 @keyframes shake {
-  25%{transform: rotate(15deg);}
-  50%{transform: rotate(-15deg);}
-  75%{transform: rotate(15deg);}
-  100%{transform: rotate(-15deg);}
+  25% {
+    transform: rotate(15deg);
+  }
+  50% {
+    transform: rotate(-15deg);
+  }
+  75% {
+    transform: rotate(15deg);
+  }
+  100% {
+    transform: rotate(-15deg);
+  }
 }
 
-.intro, .about, .skills, .portfolio, .contact {
+.intro,
+.about,
+.skills,
+.portfolio,
+.contact {
   padding-block: 100px;
 }
 
-.about, .portfolio {
+.about,
+.portfolio {
   background: var(--clr-dark);
 }
 
@@ -205,11 +223,19 @@ nav li {
 }
 
 /* ABOUT ME */
-.about-wrapper, .skills-wrapper, .portfolio-wrapper, .contact-wrapper {
+.about-wrapper,
+.skills-wrapper,
+.portfolio-wrapper,
+.contact-wrapper {
   gap: 50px;
 }
 
-.about-wrapper, .heading, .about-content__wrapper, .skills-wrapper, .skills-item, .portfolio-wrapper {
+.about-wrapper,
+.heading,
+.about-content__wrapper,
+.skills-wrapper,
+.skills-item,
+.portfolio-wrapper {
   align-items: center;
 }
 
@@ -251,15 +277,17 @@ nav li {
   font-size: 1.25rem;
 }
 
-.about-content, .about-content__details {
-  gap: 30px;  
+.about-content,
+.about-content__details {
+  gap: 30px;
 }
 
 .about-content__item {
   gap: 5px;
 }
 
-.skills .heading div, .contact .heading div {
+.skills .heading div,
+.contact .heading div {
   color: var(--clr-dark);
 }
 

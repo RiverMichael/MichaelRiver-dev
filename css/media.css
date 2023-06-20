@@ -1,79 +1,83 @@
 @media (min-width: 600px) {
-    .copy {
-        font-size: 1rem;
-    }
+  .copy {
+    font-size: 1rem;
+  }
 
-    h1 {
-        font-size: 4.7rem;
-    }
+  h1 {
+    font-size: 4.7rem;
+  }
 
-    h2, .about-heading h3 {
-        font-size: 3rem;
-    }
+  h2,
+  .about-heading h3 {
+    font-size: 3rem;
+  }
 
-    h3 {
-        font-size: 2.4rem;
-    }
+  h3 {
+    font-size: 2.4rem;
+  }
 
-    p, .about-content__item a {
-        font-size: 1.25rem;
-    }
+  p,
+  .about-content__item a {
+    font-size: 1.25rem;
+  }
 
-    .skille-item h3 {
-        font-size: 1.5rem;
-    }
+  .skille-item h3 {
+    font-size: 1.5rem;
+  }
 
-    .heading div {
-        font-size: 6rem;
-    }
+  .heading div {
+    font-size: 6rem;
+  }
 
-    .about__image, .about-image__box {
-        width: 350px;
-        height: 350px;
-    }
+  .about__image,
+  .about-image__box {
+    width: 350px;
+    height: 350px;
+  }
 
-    .skills-content {
-        gap: 30px;
-    }
+  .skills-content {
+    gap: 30px;
+  }
 }
 
 @media (min-width: 900px) {
-    nav {
-        display: block;
-        position: sticky;
-        margin-left: auto;
-        opacity: 1;
-    }
+  nav {
+    display: block;
+    position: sticky;
+    margin-left: auto;
+    opacity: 1;
+  }
 
-    nav ul {
-        padding: 0px;
-        gap: 30px;
-    }
+  nav ul {
+    padding: 0px;
+    gap: 30px;
+  }
 
-    nav ul a {
-        transition: opacity 0.25s ease-in-out;
-    }
+  nav ul a {
+    transition: opacity 0.25s ease-in-out;
+  }
 
-    #hamburger-icon, #close-menu__icon {
-        display: none;
-    }
+  #hamburger-icon,
+  #close-menu__icon {
+    display: none;
+  }
 
-    .split {
-        flex-direction: row;
-    }
+  .split {
+    flex-direction: row;
+  }
 
-    .about-content__wrapper {
-        align-items: flex-start;
-    }
+  .about-content__wrapper {
+    align-items: flex-start;
+  }
 
-    .project-wrapper {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 50px;
-    }
+  .project-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+  }
 }
 
 @media (min-width: 1200px) {
-    .project-wrapper {
-        grid-template-columns: repeat(3, 1fr);
-    }
+  .project-wrapper {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }

@@ -1,14 +1,14 @@
 :root {
-    --ff-body: "Merriweather Sans", sans-serif;
+  --ff-body: "Merriweather Sans", sans-serif;
 
-    --fw-light: 300;
-    --fw-regular: 400;
-    --fw-bold: 700;
+  --fw-light: 300;
+  --fw-regular: 400;
+  --fw-bold: 700;
 
-    --clr-text: #ffffff;
-    --clr-action: #f84759;
-    --clr-darkgrey: #403f40;
-    --clr-link: #919191;
-    --clr-light: #202020;
-    --clr-dark: #1d1d1d;
+  --clr-text: #ffffff;
+  --clr-action: #f84759;
+  --clr-darkgrey: #403f40;
+  --clr-link: #919191;
+  --clr-light: #202020;
+  --clr-dark: #1d1d1d;
 }
