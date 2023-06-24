@@ -340,7 +340,7 @@ nav li {
 }
 
 .project:hover {
-  transform: scale(1.05);
+  transform: scale(1.02);
 }
 
 .project-content {
