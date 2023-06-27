@@ -27,17 +27,26 @@ navMenuItems.forEach((menuItem) => {
 });
 
 // Toggle Navigation
+/**
+ * Opens the dropdown menu when clicking the menu button
+ */
 function openMenu() {
   nav.classList.add("display-nav");
   hamburgerMenuButton.style.opacity = 0;
 }
 
+/**
+ * Closes the dropdown menu when clicking the menu button
+ */
 function closeMenu() {
   nav.classList.remove("display-nav");
   hamburgerMenuButton.style.opacity = 1;
 }
 
 // Nav on Scroll
+/**
+ * Changes which navbar item that shows as active when scrolling the page
+ */
 function handleNavOnScroll() {
   const maxScroll = document.documentElement.scrollHeight - window.innerHeight;
 
